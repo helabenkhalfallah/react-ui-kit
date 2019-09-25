@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, './dist'),
     filename: 'react-ui-h-kit.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2',
   },
   module: {
     rules: [
@@ -60,7 +60,7 @@ module.exports = {
     alias: {
       '@ant-design/icons/lib/dist$': path.resolve(__dirname, './components/icons/icons.js'),
       moment: 'moment/moment.js',
-      'react': path.resolve(__dirname, './node_modules/react'),
+      react: path.resolve(__dirname, './node_modules/react'),
       'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
     },
   },
@@ -68,18 +68,18 @@ module.exports = {
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /fr/),
   ],
   externals: {
-    // Don't bundle react or react-dom      
+    // Don't bundle react or react-dom
     react: {
-      commonjs: "react",
-      commonjs2: "react",
-      amd: "React",
-      root: "React"
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'React',
+      root: 'React',
     },
-    "react-dom": {
-      commonjs: "react-dom",
-      commonjs2: "react-dom",
-      amd: "ReactDOM",
-      root: "ReactDOM"
-    }
-  }
+    'react-dom': {
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'ReactDOM',
+      root: 'ReactDOM',
+    },
+  },
 };
