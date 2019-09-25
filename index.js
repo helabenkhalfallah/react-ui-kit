@@ -1,6 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import RKButton from './components/Button/RKButton';
+import Icons from './components/icons/icons';
 
-// eslint-disable-next-line react/jsx-filename-extension
-ReactDOM.render(<App />, document.getElementById('root'));
+export {
+  RKButton,
+  Icons,
+};
